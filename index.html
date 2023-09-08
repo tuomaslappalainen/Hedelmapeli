@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hedelmäpeli</title>
+</head>
+<body>
+    
+
+
+    <section class="header">
+        <div class="otsikkowrap">
+        <h1 class="otsikko">
+            <span data-text="hedelma">Hedelmä</span>
+            <span data-text="peli">Peli</span>
+        </h1>
+    </div>
+    </section>
+</div>
+
+<div class="xdd">
+<p>Voit lukita hedelmät clickaamalla niitä</p>
+</div>
+</body>
+   <div class="center">
+<p>Rahaa: <span id="money">100</span>€</p>
+    <p>Panos: <input type="number" id="bet" min="1" step="1" value="1">€</p>
+    <button id="spinButton">Pelaa</button>
+    <div id="reels">
+        <input type="image" class="reel" id="reel1" src="kuvat/apple.jpg" onclick="lock(0)" alt="">
+        <input type="image" class="reel" id="reel2" src="kuvat/cherry.png" onclick="lock(1)" alt="">
+        <input type="image" class="reel" id="reel3" src="kuvat/pear.png" onclick="lock(2)"  alt="">
+        <input type="image" class="reel" id="reel4" src="kuvat/melon.png" onclick="lock(3)" alt="">
+    </div>
+<p id="output"></p>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
