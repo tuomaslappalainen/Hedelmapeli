@@ -37,6 +37,7 @@ function spin() {
         lockUsed = false
     }
     const bet = parseInt(document.getElementById('bet').value);
+    console.log('bet: ' + bet)
 
     if (bet > money) {
         alert('Panos on suurempi kuin käytössä oleva raha');
@@ -74,6 +75,7 @@ function spin() {
 
     if(lockUsed) {
         reels.forEach(reel => reel.disabled = true)
+        reels.forEach((reel) => reel.style.filter="brightness(100%)")
         lockedReels = []
     } else {
         reels.forEach(reel => reel.disabled = false)
