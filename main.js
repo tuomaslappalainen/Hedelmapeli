@@ -2,11 +2,11 @@
 
 const symbols = ['kuvat/apple.jpg', 'kuvat/cherry.png', 'kuvat/melon.png', 'kuvat/numberer7.jpg', 'kuvat/pear.png'];
 const payouts = {
-    'kuvat/numberer7.jpg': 10,
-    'kuvat/apple.jpg': 6,
-    'kuvat/melon.png': 5,
-    'kuvat/pear.png': 4,
-    'kuvat/cherry.png': 3,
+    'numberer7.jpg': 10,
+    'apple.jpg': 6,
+    'melon.png': 5,
+    'pear.png': 4,
+    'cherry.png': 3,
 };
 
 let lockUsed = false
@@ -58,7 +58,7 @@ function spin() {
     }
 
     reels.forEach(reel => {
-        const xd = reel.src.split('5500/')
+        const xd = reel.src.split('kuvat/')
         result.push(xd[1]);
     })
 
